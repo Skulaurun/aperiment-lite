@@ -135,7 +135,8 @@ renderTableData(data);
 (async () => {
 
     let { modpackId } = await browser.storage.local.get("modpackId");
-    setModpackId(modpackId);
-    loadModpackList(modpackId);
+    if (modpackId) {
+        loadModpackList(modpackId);
+    }
 
 })();
