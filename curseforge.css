@@ -1,0 +1,30 @@
+.se-uvidi-button {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 6px 8px;
+    background-color: #26ca4f;
+    border-radius: 6.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.se-uvidi-button:hover {
+    cursor: pointer;
+    background-color: #29d855;
+}
+.se-uvidi-button:active {
+    background-color: #24e254;
+}
+
+.se-uvidi-notice {
+    text-align: center;
+    font-size: 8px;
+}
+.se-uvidi-notice a {
+    color: #26ca4f;
+    text-decoration: none;
+}
+.se-uvidi-notice a:hover {
+    color: #24e254;
+    text-decoration: none; 
+    cursor: pointer;
+}

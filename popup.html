@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="popup.css">
+        <link rel="stylesheet" href="curseforge.css">
+        <script src="request.js"></script>
+        <script src="popup.js" defer></script>
+    </head>
+
+    <body>
+        
+        <div class="header">
+            <h1>Aperiment Lite</h1>
+            <p id="view-modpack-id">Modpack: <a id="modpack-id"></a></p>
+            <p id="back-to-overlay"><a id="back-to-overlay-button">Back</a></p>
+        </div>
+
+        <div class="content">
+            <input type="text" class="filter" placeholder="filter" id="mod-filter">
+            <table>
+                <tbody id="mod-list"></tbody>
+            </table>
+            <div class="beginner-overlay" id="beginner-overlay">
+                <div class="create-section">
+                    <p>Looking to create something amazing?</p>
+                    <p>Click the button below and get started!</p>
+                    <button class="se-uvidi-button">Create</button>
+                </div>
+                <div class="join-section">
+                    <input type="text" class="filter join-input" placeholder="enter modpack id">
+                    <button class="se-uvidi-button">Join</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyright (c) 2022 Adam Charvát</p>
+            <div class="se-uvidi">
+                <img src="https://www.skulaurun.eu/images/kouzelnicek.png">
+                Powered by <a href="https://www.skulaurun.eu/se-uvidi" target="_blank">Se-Uvidi</a> API.
+            </div>
+        </div>
+
+    </body>
+
+</html>

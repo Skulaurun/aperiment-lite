@@ -1,0 +1,162 @@
+:root {
+    color-scheme: dark;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    width: 400px;
+    min-height: 600px;
+    font-family: "Comic Sans MS", "Comic Sans", "Calibri", sans-serif;
+    background: linear-gradient(to left top, rgb(20, 20, 20), rgb(25, 25, 25)) fixed;
+}
+
+a {
+    color: #26ca4f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #24e254;
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+}
+.header h1 {
+    display: inline-block;
+    font-size: 32px;
+}
+
+#view-modpack-id, #back-to-overlay {
+    display: none;
+    position: absolute;
+    bottom: -16px;
+    left: 10px;
+}
+#back-to-overlay {
+    left: auto;
+    right: 10px;
+}
+
+.content {
+    position: relative;
+    margin: 8px;
+    height: 420px;
+    padding: 16px;
+    background-color: rgb(45, 45, 45);
+    border-radius: 8px;
+    box-shadow: 5px 10px 20px rgb(10, 10, 10);
+    overflow-y: auto;
+}
+.content .filter {
+    position: absolute;
+    width: calc(100% - 32px);
+    outline: none;
+    resize: none;
+    color: inherit;
+    background-color: inherit;
+    font-family: inherit;
+    padding: 4px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 2px solid rgb(218, 218, 218, 0.25);
+}
+.content table {
+    margin-top: 40px;
+    font-size: 16px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.content table tbody td:nth-child(1) {
+    width: 100%;
+    overflow: hidden;
+}
+.content table tbody td:nth-child(1) a {
+    color: inherit;
+    display: block;
+}
+.content table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.content table td {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.content .beginner-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: inherit;
+}
+.beginner-overlay .create-section {
+    border-bottom: 1px solid grey;
+}
+.beginner-overlay .join-section, .beginner-overlay .create-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+.beginner-overlay .create-section p {
+    margin: 2px;
+    font-size: 16px;
+}
+.beginner-overlay .create-section button {
+    margin-top: 16px;
+}
+.beginner-overlay .join-section button, .beginner-overlay .create-section button {
+    padding: 8px 16px 8px 16px;
+    font-size: 32px;
+    width: calc(100% - 64px);
+    text-align: center;
+}
+.beginner-overlay .join-section .join-input {
+    position: relative;
+    display: block;
+    margin-bottom: 16px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.footer {
+    margin-top: auto;
+    position: relative;
+    padding: 8px;
+    padding-top: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
+    width: 100%;
+    height: 64px;
+    border-top: 2px solid #26ca4f;
+    background-color: rgb(16, 16, 16);
+}
+.footer p {
+    display: inline-block;
+}
+.footer .se-uvidi {
+    position: relative;
+    float: right;
+}
+.footer .se-uvidi img {
+    transform: translateY(4px);
+    width: 16px;
+    height: 24px;
+    margin-right: 2px;
+}
