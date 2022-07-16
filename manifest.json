@@ -8,11 +8,13 @@
     },
     "version": "1.0",
     "permissions": ["storage", "*://www.skulaurun.eu/*"],
+    "icons": {
+        "48": "icon.svg",
+        "96": "icon.svg"
+    },
     "browser_action": {
         "browser_style": true,
-        "default_icon": {
-            "48": "icon.png"
-        },
+        "default_icon": "icon.svg",
         "default_title": "Aper Lite",
         "default_popup": "popup.html"
     },
