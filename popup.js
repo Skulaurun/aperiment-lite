@@ -84,7 +84,11 @@ function renderTableData(tableData, element = document.getElementById("mod-list"
 
         const row = document.createElement("tr");
         const name = document.createElement("td");
-        name.innerHTML = `<a href='${entry.url}' target='_blank'>${entry.name}</a>`;
+        const url = document.createElement("a");
+        url.setAttribute("target", "_blank");
+        url.textContent = entry.name;
+        url.href = entry.url;
+        name.appendChild(url);
 
         const button = document.createElement("td");
         const link = document.createElement("a");
