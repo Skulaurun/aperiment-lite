@@ -28,3 +28,8 @@
     text-decoration: none; 
     cursor: pointer;
 }
+
+.curseforge-button {
+    width: 108.667px; /* FIXED WIDTH */
+    height: 30px; /* FIXED HEIGHT */
+}
