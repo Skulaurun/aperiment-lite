@@ -6,7 +6,7 @@
         "name": "Adam Charvát",
         "url": "https://www.skulaurun.eu"
     },
-    "version": "1.0",
+    "version": "1.1",
     "permissions": ["storage", "*://www.skulaurun.eu/*"],
     "icons": {
         "48": "icon.svg",
