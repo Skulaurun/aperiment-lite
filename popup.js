@@ -131,6 +131,7 @@ function renderTableData(tableData, element = document.getElementById("mod-list"
 }
 
 renderTableData(data);
+document.getElementById("mod-filter").focus();
 
 (async () => {
 
