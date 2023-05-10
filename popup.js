@@ -37,7 +37,7 @@ async function loadModpackList(id) {
             mod.name = mod.url.split("/").pop();
         }
     
-        data = modpack.mods;
+        data = modpack.mods.reverse();
         renderTableData(data);
     
     }
