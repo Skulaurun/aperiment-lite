@@ -20,7 +20,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["*://www.curseforge.com/minecraft/mc-mods*"],
+            "matches": ["*://www.curseforge.com/minecraft/mc-mods*", "*://www.curseforge.com/minecraft/search*"],
             "js": ["request.js", "curseforge.js"],
             "css": ["curseforge.css"]
         }

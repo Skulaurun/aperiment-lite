@@ -52,3 +52,14 @@
 .curseforge-button {
     min-height: 36px;
 }
+
+.curseforge-search {
+    width: 142px;
+    margin-top: 40px;
+}
+.curseforge-search .curseforge-button {
+    width: 142px;
+}
+.curseforge-search .se-uvidi-notice {
+    margin-top: 38px;
+}
