@@ -36,6 +36,23 @@ a:hover {
     font-size: 32px;
 }
 
+.se-uvidi-button {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 6px 8px;
+    background-color: #26ca4f;
+    border-radius: 6.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.se-uvidi-button:hover {
+    cursor: pointer;
+    background-color: #29d855;
+}
+.se-uvidi-button:active {
+    background-color: #24e254;
+}
+
 #view-modpack-id, #back-to-overlay {
     display: none;
     position: absolute;
@@ -148,6 +165,10 @@ a:hover {
     background-color: rgb(16, 16, 16);
 }
 .footer p {
+    position: absolute;
+    top: 14px;
+    bottom: 0;
+    margin: auto;
     display: inline-block;
 }
 .footer .se-uvidi {
@@ -159,4 +180,10 @@ a:hover {
     width: 16px;
     height: 24px;
     margin-right: 2px;
+}
+
+.footer p .author {
+    margin-top: 4px;
+    display: block;
+    text-align: center;
 }

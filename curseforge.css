@@ -1,11 +1,28 @@
+.se-uvidi-button-wrapper {
+    position: relative;
+}
 .se-uvidi-button {
+    position: relative;
     border: none;
     outline: none;
     color: white;
     padding: 6px 8px;
+    font-size: 16px;
+    padding-left: 24px;
+    padding-right: 10px;
     background-color: #26ca4f;
-    border-radius: 6.5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+.se-uvidi-button::before {
+    content: '+';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 6px;
+    top: 2px;
+    bottom: 0;
+    font-size: 24px;
 }
 .se-uvidi-button:hover {
     cursor: pointer;
@@ -16,8 +33,11 @@
 }
 
 .se-uvidi-notice {
+    position: absolute;
+    margin-top: 8px;
     text-align: center;
-    font-size: 8px;
+    font-size: 14px;
+    left: 0; right: 0;
 }
 .se-uvidi-notice a {
     color: #26ca4f;
@@ -30,6 +50,5 @@
 }
 
 .curseforge-button {
-    width: 110px; /* FIXED WIDTH */
-    height: 30px; /* FIXED HEIGHT */
+    min-height: 36px;
 }
